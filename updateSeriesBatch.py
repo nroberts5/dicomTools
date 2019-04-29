@@ -16,7 +16,7 @@ import pydicom
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Modify Series Description',usage='updateSeriesDesc /path/to/[scanner] -ext "dcm" -v')
+    parser = argparse.ArgumentParser(description='Modify Series Description and Number',usage='updateSeriesBatch.py /path/to/[scanner] -ext "dcm" -v')
     parser.add_argument('root_dir',help='Path to top folder in containing folder')
     parser.add_argument('-ext',default=None, type=str, help='Dicom is recognized by this extension: STR')
     parser.add_argument('-sw', default=None, type=str, help='Dicom is recognized by starting with: STR')
