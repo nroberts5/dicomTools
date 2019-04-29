@@ -3,17 +3,11 @@
 import os
 import argparse
 
-
 ## You can comment out these two lines after you run it once
 from pip._internal import main as pipmain
 pipmain(['install','pydicom'])
 
-
 import pydicom
-
-
-
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Modify Series Description and Number',usage='updateSeriesBatch.py /path/to/[scanner] -ext "dcm" -v')
